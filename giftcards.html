@@ -1,0 +1,191 @@
+<!--PAGE BY NATALIE DOAK --> 
+<!DOCTYPE html>
+<head>
+	<title>AM PM | GIFT CARD</title>
+		<meta charset= "UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script src = "giftcard.js" type="text/javascript"></script>
+		<link rel = "stylesheet" type = "text/css" href="giftcard.css" />
+ 
+	</head>
+	<body>
+		 <div class="page-wrapper">
+            <!--header-->
+	 <header>
+        
+        <h1 class="hidden">Main Header</h1>
+       
+            <div id="logo">
+                <a class="logo" title="AM PM Restaurant" href="index.html"><img alt="logo" src="images/logo.svg"></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a title="MENU" href="menu.html">MENU</a>
+                        <ul>
+                            <li><a title="DAILY SPECIAL" href="specials.html">DAILY SPECIAL</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a title="EVENTS AND BOOKING" href="events.html">EVENTS &amp; BOOKING</a></li>
+                    <li><a title="GIFT CARD" href="giftcards.html">GIFT CARD</a>
+                         <ul>
+                        <li><a title="GAME" href="game.html">GAME</a></li>
+                        </ul>
+                    </li>
+                    <li><a title="ABOUT" href="about.html">ABOUT</a></li>
+                    <li><a title="CONTACT" href="contactus.html">CONTACT</a>
+                        <ul>
+                            <li><a title="LOCATION" href="locations.html">LOCATION</a></li>
+                        </ul>
+                    </ul>
+            </nav>
+            
+	</header>
+
+<!--MAIN-->
+	<main>
+      
+ <p id="mainTitle"> PURCHASE GIFT CARD ONLINE </p>
+<form action="thankyou-GIFTCARD.html" method="post"  onsubmit="processForm()" id="form1" name="myform" class="form-wrapper">
+
+
+
+	<fieldset> 
+		
+	   <h3 >Choose Gift Card Amount</h3>
+	   <select name="validAmt" id="validAmt">
+	   	<option value="CA">CA Dollar Amount</option>
+	   <option value ="20">$20</option>
+	   	<option value="30">$30</option>
+	   	<option value="40">$40</option>
+	   	<option value="50">$50</option>
+	   	<option value="60">$60</option>
+	   	<option value="80">$80</option>
+	   	<option value="100">$100</option>
+	   	<option value="130">$130</option>
+	   	 </select>
+          <p><span id="errorMessage"></span><p>
+     
+   
+        <p><span id="giftAmount"></span></p>
+	   	</fieldset> 
+       
+
+
+	<!--SHIPPING ADDRESS --> 
+  
+	<fieldset> 
+		
+		<p>Shipping Address</p>
+		<label for="address">Address:</label><input type="text" id="address" name="address"> 
+		<p><span id="errorMessage1"></span></p>
+		
+        <select id="country" name="country">
+			<option selected = "" value="Select">Please select a country</option>
+			<option value = "Canada">Canada</option>
+		</select>
+       
+	   
+	     <select name="province" id="province">
+		     <option selected = "" value="Default"> Please select your province</option>
+		     <option value="ON">Ontario</option>
+         </select>
+         <p><span id="errorMessage2"></span></p>
+
+	     <label for="spostalcode">Postal Code:</label><input type="text" id="spostalcode">
+          <p><span id="errorMessage3"></span></p>
+         
+
+    </fieldset>
+
+	<!--PAYMENT TYPE --> 
+	<fieldset>
+      
+      <p> Payment type</p>
+<select id="paymentType" title="Choose a payment type">
+  <option value="0">Select a payment option</option>
+  <option value="visa">VISA</option>
+  <option value="master">Mastercard</option>
+  <option value="amer">American Express</option>
+</select>
+ 
+
+
+<p> Expiry date </p>
+<select id="exMonth" title="select a month">
+<option value="Month">Enter month</option>
+    <option value="01">January</option>
+    <option value="02">February</option>
+    <option value="03">March</option>
+    <option value="04">April</option>
+    <option value="05">May</option>
+    <option value="06">June</option>
+    <option value="07">July</option>
+    <option value="08">August</option>
+    <option value="09">September</option>
+    <option value="10">October</option>
+    <option value="11">November</option>
+    <option value="12">December</option>
+</select>
+
+
+<select id="exYear" title="select a year">
+ <option value="Year">Enter year</option>
+    <option value="2016">2016</option>
+    <option value="2017">2017</option>
+    <option value="2018">2018</option>
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+    <option value="2025">2025</option>
+    <option value="2026">2026</option>
+    <option value="2027">2027</option>
+    <option value="2028">2028</option>
+    <option value="2029">2029</option>
+    <option value="2030">2030</option>
+    <option value="2031">2031</option>
+</select>
+ 
+<p><label>Credit card number <input type="text" id="cardNumber"/> </label></p>
+ <p><span id="errorMessage4"></span><p>
+</fieldset>
+
+	 
+       
+	   <!-- CONFIRM BUTTON -->
+ 
+	   <div id="button">
+	   	<input type="submit" name="submit" id="confirm" value="Confirm" class="confirm">
+	   </div>
+ </form>
+	</main>
+
+        <!--footer-->
+        <footer id="footer">
+        
+        <div class="footer-wrapper">
+            <div class="footer-info">
+                <ul>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li> | </li>
+                    <li><a href="sitemap.html">SITE MAP</a></li>
+                    <li> | </li>
+                    <li><a href="careers.html">CAREERS</a></li>
+                </ul>
+            </div>
+            <div id="socmedia">
+                <ul>
+                    <li><a href="#"><span class="fa fa-facebook-official"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+    </body>
+	</html>

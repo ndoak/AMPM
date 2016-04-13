@@ -1,0 +1,297 @@
+/* NATALIE DOAK with default styling by designer - Dia Jiao*/
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700|Anton|Hind:400|Raleway:700,300|Montserrat:700|Quicksand:700);
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+}
+
+a,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: #f9f6ea;
+}
+
+a:hover {
+    color: #79cae7;
+    
+}
+
+.page-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-wrapper {
+    margin: 0 auto;
+    padding: 0 0 100px 0;
+}
+
+.footer-wrapper {
+    max-width: 84%;
+    /*1024/(1024 - 80 - 80)*/
+    margin: 0 auto;
+}
+
+nav,
+h1,
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*-----------------HEADER-----------------*/
+
+header {
+    height: 300px;
+    background-color: #e32925;
+    position: relative;
+}
+
+header a.logo {
+    position: absolute;
+    display: block;
+    width: 11.68rem;
+   
+    height: auto;
+    left: 80px;
+    top: 3.75rem;
+    
+}
+
+
+/*-----------------NAV-----------------*/
+
+nav {
+    width: 100%;
+  
+    height: 12.5rem;
+    /*200/16*/
+    padding: 5.625rem 0 0 0;
+    /*90/16*/
+    font-size: 1.25em;
+    /*20/16*/
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 5px 10px 5px 0;
+    width: 120px;
+    margin: 0;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+nav li a:hover {
+    color: #79cbe8;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    border-top: 2px solid #FFF;
+    padding-top: 10px;
+    width: 5.625rem;
+   
+}
+
+
+/* FIRST-LEVEL NAV*/
+
+nav > ul {
+    float: right;
+}
+
+nav > ul > li {
+    float: left;
+}
+
+
+/*-----------------MAIN-----------------*/
+
+main{
+    background-color: #f9f6ea;
+    position: relative;
+    color: #e42926;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    height:100%;
+}
+
+.main-wrapper {
+    padding-top: 6.875rem;
+    width:100%;
+}
+
+h2 {
+    font-size:1.5rem;
+    padding:20px 20px 20px 20px;
+text-align:center;
+}
+
+
+/*-----------------FORM-----------------*/
+
+#errorMessage,
+#errorMessage1,
+#errorMessage2,
+#errorMessage3,
+#errorMessage4,
+{
+    display: none;
+}
+
+#mainTitle {
+      font-family: "Anton", sans-serif;
+    font-size: 2.3em;
+    text-align: center;
+    padding-top:10px;
+
+}
+
+.form-wrapper {
+    max-width: 70%;
+    font-size: 1em;
+    margin: 20px auto;
+    position: relative;
+}
+
+.form-container {
+    border: 4px solid #6195ac;
+
+    margin: 20px auto;
+    max-width: 70%;
+    padding: 30px 0;
+}
+
+form {
+    margin-left: 10%;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+label {
+    display: block;
+    clear: both;
+    margin: 5px auto;
+
+}
+
+fieldset{
+    border: 1px solid grey;
+}
+
+input[type=text], input[type=email]{
+    margin-bottom: 30px;
+    width: 300px;
+    height: 40px;
+}
+
+textarea {
+    max-height: 150px;
+    max-width: 300px;
+   width: 300px;
+    margin-bottom: 30px;
+}
+
+select {
+    margin-bottom:10px;
+}
+.err {
+
+    font-size: .7em;
+    font-weight: 300;
+}
+
+button {
+    color: #FFF;
+    background-color: #6195ac;
+    border: 1px solid #6195ac;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    font-family: "Quicksand", san-serif;
+    font-size: 1rem;
+    /*30/16*/
+    margin: 55px auto;
+    text-align: center;
+    padding-top:20px;
+}
+/*-----------------FOOTER-----------------*/
+
+footer {
+    background-color: #e32925;
+    color: #f9f6ea;
+    padding: 30px 0;
+    max-width: 100%;
+}
+
+footer a {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+.footer-info {
+    width: 100%;
+    display: inline-block;
+    margin-right: 0;
+    display: relative;
+}
+
+.footer-info ul {
+    list-style: none;
+}
+
+.footer-info li {
+    display: inline;
+    padding-right: 20px;
+}
+
+#socmedia {
+    float: right;
+    display: inline-block;
+}
+
+#socmedia ul {
+    list-style: none;
+}
+
+#socmedia li {
+    display: inline;
+    padding-left: 20px;
+}
+
+footer::after {
+    content: "";
+    display: block;
+    clear: both;
+}

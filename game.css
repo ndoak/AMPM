@@ -1,0 +1,273 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700|Anton|Hind:400|Raleway:700,300|Montserrat:700|Quicksand:300,400);
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+}
+
+a,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: #f9f6ea;
+}
+
+a:hover {
+    color: #79cae7;
+    /*******new*******/
+}
+
+.page-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-wrapper {
+    max-width: 84%;
+    /*1024/(1024 - 80 - 80)*/
+    margin: 0 auto;
+    padding: 0 0 100px 0;
+}
+
+.footer-wrapper {
+    max-width: 84%;
+    /*1024/(1024 - 80 - 80)*/
+    margin: 0 auto;
+}
+
+nav,
+h1,
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*-----------------HEADER-----------------*/
+
+header {
+    height: 300px;
+    background-color: #e32925;
+    position: relative;
+}
+
+header a.logo {
+    position: absolute;
+    display: block;
+    width: 11.68rem;
+    /*187/16*/
+    heigh: auto;
+    left: 80px;
+    top: 3.75rem;
+    /*60/16*/
+}
+
+
+/*-----------------NAV-----------------*/
+
+nav {
+    width: 100%;
+    /*    background-color: rgba(0, 0, 0, .45);*/
+    height: 12.5rem;
+    /*200/16*/
+    padding: 5.625rem 0 0 0;
+    /*90/16*/
+    font-size: 1.25em;
+    /*20/16*/
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 5px 10px 5px 0;
+    width: 120px;
+    margin: 0;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+nav li a:hover {
+    color: #79cbe8;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    border-top: 2px solid #FFF;
+    padding-top: 10px;
+    width: 5.625rem;
+    /*90/16*/
+}
+
+
+/* FIRST-LEVEL NAV*/
+
+nav > ul {
+    float: right;
+}
+
+nav > ul > li {
+    float: left;
+}
+
+
+/*-----------------MAIN-----------------*/
+
+main {
+    background-color: #f9f6ea;
+    position: relative;
+    color: #e42926;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    background-image: url(images/burger_dish2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-wrapper {
+    padding-top: 6.875rem;
+    height: 800px;
+}
+
+.res-title {
+    font-family: "Anton", sans-serif;
+    font-size: 2.3em;
+    text-align: center;
+}
+
+.form-wrapper {
+    margin: 50px 0;
+}
+
+#title {
+    width: 300px;
+    float: right;
+}
+
+h1 {
+    font-family: "Quicksand", sans-serif;
+    color: #f9f6ea;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+#rule {
+    font-family: "Montserra", sans-serif;
+    color: #f9f6ea;
+    font-size: 1em;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+input[type=text] {
+    border-radius: .2em;
+    width: 130px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid #f9f6ea;
+    padding: 5px;
+    font-size: 2.5em;
+    color: #f9f6ea;
+}
+
+button {
+    color: #FFF;
+    background-color: #e32925;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    font-family: "Quicksand", san-serif;
+    font-size: 1rem;
+    /*30/16*/
+    margin: 30px auto;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+
+/*-----------------FOOTER-----------------*/
+
+footer {
+    background-color: #e32925;
+    color: #f9f6ea;
+    padding: 30px 0;
+    max-width: 100%;
+}
+
+footer a {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+.footer-info {
+    /*----------***** NEW *******----------*/
+    float: left;
+    max-width: 100%;
+    display: inline-block;
+    margin-right: 0;
+    display: relative;
+}
+
+.footer-info ul {
+    list-style: none;
+}
+
+.footer-info li {
+    display: inline;
+    padding-right: 20px;
+}
+
+#socmedia {
+    float: right;
+    display: inline-block;
+}
+
+#socmedia ul {
+    list-style: none;
+}
+
+#socmedia li {
+    display: inline;
+    padding-left: 20px;
+}
+
+footer::after {
+    content: "";
+    display: block;
+    clear: both;
+}

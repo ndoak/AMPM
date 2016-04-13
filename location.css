@@ -1,0 +1,135 @@
+/*Eric Westcott*/
+
+/*Locations Page*/
+.QWbtn{
+    float:left;
+    margin-left: 25%
+}
+
+.QEbtn{
+    float:right;
+    margin-right: 25%;
+}
+
+/*Buttons created using http://www.bestcssbuttongenerator.com/*/
+.QWbtn {
+    -moz-box-shadow:inset 0px 1px 0px 0px #e32925;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #e32925;
+    box-shadow:inset 0px 1px 0px 0px #e32925;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e32925), color-stop(1, #e32925));
+    background:-moz-linear-gradient(top, #e32925 5%, #e32925 100%);
+    background:-webkit-linear-gradient(top, #e32925 5%, #e32925 100%);
+    background:-o-linear-gradient(top, #e32925 5%, #e32925 100%);
+    background:-ms-linear-gradient(top, #e32925 5%, #e32925 100%);
+    background:linear-gradient(to bottom, #e32925 5%, #e32925 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e32925', endColorstr='#e32925',GradientType=0);
+    background-color:#e32925;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #e32925;
+    display:inline-block;
+    cursor:pointer;
+    color:#f9f6ea;
+    font-family: 'Oswald', sans-serif;
+    font-size:18px;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #f9f6ea;
+}
+
+.QWbtn:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e32925), color-stop(1, #e32925));
+    background:-moz-linear-gradient(top, #f9f6ea 5%, #f9f6ea 100%);
+    background:-webkit-linear-gradient(top, #f9f6ea 5%, #f9f6ea 100%);
+    background:-o-linear-gradient(top, #f9f6ea 5%, #f9f6ea 100%);
+    background:-ms-linear-gradient(top, #f9f6ea 5%, #f9f6ea 100%);
+    background:linear-gradient(to bottom, #f9f6ea 5%, #f9f6ea 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6ea', endColorstr='#f9f6ea',GradientType=0);
+    background-color:#f9f6ea;
+    color:#e32925;
+}
+
+.QWbtn:active {
+    position:relative;
+    top:1px;
+}
+
+.QEbtn {
+    -moz-box-shadow:inset 0px 1px 0px 0px #e32925;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #e32925;
+    box-shadow:inset 0px 1px 0px 0px #e32925;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e32925), color-stop(1, #e32925));
+    background:-moz-linear-gradient(top, #e32925 5%, #e32925 100%);
+    background:-webkit-linear-gradient(top, #e32925 5%, #e32925 100%);
+    background:-o-linear-gradient(top, #e32925 5%, #e32925 100%);
+    background:-ms-linear-gradient(top, #e32925 5%, #e32925 100%);
+    background:linear-gradient(to bottom, #e32925 5%, #e32925 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e32925', endColorstr='#e32925',GradientType=0);
+    background-color:#e32925;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #e32925;
+    display:inline-block;
+    cursor:pointer;
+    color:#f9f6ea;
+    font-family: 'Oswald', sans-serif;
+    font-size:18px;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #f9f6ea;
+}
+
+.QEbtn:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e32925), color-stop(1, #e32925));
+    background:-moz-linear-gradient(top, #f9f6ea 5%, #f9f6ea 100%);
+    background:-webkit-linear-gradient(top, #f9f6ea 5%, #f9f6ea 100%);
+    background:-o-linear-gradient(top, #f9f6ea 5%, #f9f6ea 100%);
+    background:-ms-linear-gradient(top, #f9f6ea 5%, #f9f6ea 100%);
+    background:linear-gradient(to bottom, #f9f6ea 5%, #f9f6ea 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6ea', endColorstr='#f9f6ea',GradientType=0);
+    background-color:#f9f6ea;
+    color:#e32925;
+}
+
+.QEbtn:active {
+    position:relative;
+    top:1px;
+}
+
+
+#Map{
+    clear:left;
+    padding-top:25px;
+    padding-bottom: 25px;
+    margin-left: 5%;
+}
+
+#QWhours{
+    height:300px;
+    width: 200px;
+    clear:right;
+    font-family: 'Oswald', sans-serif;
+    float:right;
+    margin-top: -300px;
+    margin-right: 20%;
+    font-size: 110%;
+}
+/*About Page*/
+#h2{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size:175%;
+    right:500px;
+    font-weight: bold;
+}
+
+.about{
+    margin: auto;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 125%;
+    width:60%;
+    padding:10px;
+}
